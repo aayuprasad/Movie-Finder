@@ -1,0 +1,115 @@
+body{
+    margin:0px;
+}
+.moviefinder-header{
+    position: fixed;
+    width:100%;
+    background-color: #333;
+    z-index:100;
+    top: 0;
+}
+.div-logo{
+    height:100%;
+    text-align: center;
+    margin: 10px;
+    float: left;
+}
+.moviefinder-nav{
+    float:left;
+    height:100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.moviefinder-nav a{
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    display: inline-block;
+    /* set to none so that links are not underlined */
+    text-decoration: none;
+}
+
+.moviefinder-nav a:hover:not(.active){
+    background-color: #111;
+}
+
+.active:hover{
+    background-color: rgb(196, 35, 56);
+}
+
+.active{
+    background-color: #860f29;
+}
+
+.content{
+    position: absolute;
+    top:5%;
+    background-image: url("../images/background.jpg");
+    background-size: 100% 95%;
+    height: 95%;
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    display: inline-block;
+    font-size: 50px;
+    color: black;
+    vertical-align: middle;
+}
+
+.logo-text{
+    display: inline-block;
+    font-size: 100px;
+    color: rgb(231, 223, 223);
+    vertical-align: middle;
+}
+
+.search-bar input{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid transparent
+    /* margin-right: -0.2%;
+    border: 1px solid #ccc;
+    color: #666;
+    height: 51px; */
+}
+
+#details{
+    color: white;
+}
+
+/* .search-bar button{
+    font-size: 40px;
+    display: inline-block;
+    background-color: rgb(177, 140, 140);
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+} */
+
+/* .search-bar form{
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    font-family: sans-serif;
+} */
+
+.moviecard{
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.poster{
+    display: inline;
+    vertical-align: middle;
+}
+.moviename{
+    display: inline;
+    vertical-align: middle;
+}
