@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Finder</title>
+    <title>Movies</title>
     <link rel="stylesheet" type="text/css" href="css/moviefinder.css">
     <script type="text/javascript" src="js/moviefinder.js"></script>
 </head>
-<body>
+<body class = "movies-body" onload="showDetails()">
     <div class="container">
         <header class="moviefinder-header">
             <!-- <div class="div-logo">
@@ -21,13 +21,11 @@
             </nav>
         </header>
     </div>
-    <div class="content">
-        <img src="images/logo_clapperboard.png" class="logo"><span class="logo-text"><span id="abc" onclick="change_title()">Movie Finder</span></span>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for Movie" id="movietitle">
-            <input value="&#x1F50E;" type="submit" onclick="setItemInSession()">
-        </div>
+    <div class="search-heading"> 
+    <h1 id="search_header"></h1>
     </div>
-    
+    <div class="movies-content">
+        <p id="details"></p>
+    </div>
 </body>
 </html>
