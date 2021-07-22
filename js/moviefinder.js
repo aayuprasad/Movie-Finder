@@ -1,8 +1,11 @@
-function show_details(){
-    document.getElementById("details").style.color="red";
+function showDetails(){
+    document.getElementById("details").style.color="white";
     document.getElementById("details").style.fontSize="20px";
-    movietitle=document.getElementById("movietitle").value;
-    document.getElementById("details").innerHTML=movietitle;
+    // movietitle=document.getElementById("movietitle").value;
+    movietitle = sessionStorage.getItem("movietitle")
+    var search_header_div = document.getElementById("search_header");
+    search_header_div.innerHTML += "<br/>"+"Search results for \""+movietitle+"\":";
+    // document.getElementById("details").innerHTML=movietitle;
     httpRequest=new XMLHttpRequest();
     API_KEY="e0ff26e4";
     url="http://www.omdbapi.com/?apikey="+API_KEY+"&s="+movietitle;
@@ -36,10 +39,15 @@ function show_details(){
                         // details_div.innerHTML += "<div class=\"moviecard\" id=\""+id+"\"><div class=\"poster\" id=\"poster"+id+"\"></div><div class=\"moviename\" id=\"moviename"+id+"\">"+title+"</div></div>";
                         
 
-                        details_div.innerHTML += "<img id=\"poster"+id+"\" src=\""+poster+"\" class=\"poster\"><span class=\"moviename\"><span>"+title+"</span></span>";
+                        details_div.innerHTML += "<img id=\"poster"+id+"\" src=\""+poster+"\" class=\"poster\" alt = \""+title+"\" title = \""+title+"\"><span class=\"moviename\">&nbsp; "+title+"</span><br/><br/>";
                     }
                 }
             }
         }
     }
+}
+
+function setItemInSession(){
+    sessionStorage.setItem("movietitle",document.getElementById("movietitle").value);
+    location.href = "movies.html";
 }
