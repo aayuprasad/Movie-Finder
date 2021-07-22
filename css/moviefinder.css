@@ -51,6 +51,28 @@ body{
     width: 100%;
     text-align: center;
 }
+.movies-body {
+    background-image: url("../images/background3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.search-heading{
+    position: relative;
+}
+
+.movies-content{
+    position: relative;
+    top:5%;
+    /* background-image: url("../images/background.jpg"); */
+    background-size: contain;
+    height: 95%;
+    width: 100%;
+    text-align: left;
+    padding: 50px;
+}
 
 .logo{
     display: inline-block;
@@ -78,8 +100,11 @@ body{
     height: 51px; */
 }
 
-#details{
-    color: white;
+
+
+#search_header{
+    text-align: center;
+    position: relative;
 }
 
 /* .search-bar button{
@@ -108,8 +133,14 @@ body{
 .poster{
     display: inline;
     vertical-align: middle;
+    
 }
 .moviename{
     display: inline;
     vertical-align: middle;
 }
+
+#details, #search_header{
+    color: white;
+}
+
