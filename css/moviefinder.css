@@ -1,146 +1,98 @@
 body{
-    margin:0px;
+  margin:0px;
 }
 .moviefinder-header{
-    position: fixed;
-    width:100%;
-    background-color: #333;
-    z-index:100;
-    top: 0;
+  position: fixed;
+  width:100%;
+  background-color: rgb(120, 170, 228);
+  z-index:100;
+  top: 0;
 }
-.div-logo{
-    height:100%;
-    text-align: center;
-    margin: 10px;
-    float: left;
-}
-.moviefinder-nav{
-    float:left;
-    height:100%;
-    padding: 0;
-    overflow: hidden;
-}
-
 .moviefinder-nav a{
-    color:white;
-    text-align: center;
-    padding: 14px 16px;
-    display: inline-block;
-    /* set to none so that links are not underlined */
-    text-decoration: none;
+  color:rgb(56, 50, 50);
+  text-align: center;
+  padding: 14px 16px;
+  display: inline-block;
+  text-decoration: none;
 }
-
 .moviefinder-nav a:hover:not(.active){
-    background-color: #111;
+  background-color: rgb(128, 186, 204);
 }
-
 .active:hover{
-    background-color: rgb(196, 35, 56);
+  background-color: rgb(84, 164, 230);
 }
-
 .active{
-    background-color: #860f29;
+  background-color: #87c5e2;
 }
-
 .content{
-    position: absolute;
-    top:5%;
-    background-image: url("../images/background.jpg");
-    background-size: 100% 95%;
-    height: 95%;
-    width: 100%;
-    text-align: center;
+  position: absolute;
+  top:5%;
+  /* background-image: url("../images/background.jpg"); */
+  background-color: rgb(196, 233, 245);
+  background-size: 100% 95%;
+  height: 95%;
+  width: 100%;
+  text-align: center;
 }
-.movies-body {
-    background-image: url("../images/background3.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-x: hidden;
-}
-
-.search-heading{
-    position: relative;
-}
-
-.movies-content{
-    position: relative;
-    top:5%;
-    /* background-image: url("../images/background.jpg"); */
-    background-size: contain;
-    height: 95%;
-    width: 100%;
-    text-align: left;
-    padding: 50px;
-}
-
 .logo{
-    display: inline-block;
-    font-size: 50px;
-    color: black;
-    vertical-align: middle;
+  display: inline-block;
+  font-size: 50px;
+  color: black;
+  vertical-align: middle;
 }
-
 .logo-text{
-    display: inline-block;
-    font-size: 100px;
-    color: rgb(231, 223, 223);
-    vertical-align: middle;
+  display: inline-block;
+  font-size: 100px;
+  color: rgb(66, 61, 61);
+  vertical-align: middle;
 }
-
 .search-bar input{
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 20px;
-    border-radius: 10px;
-    border: 1px solid transparent
-    /* margin-right: -0.2%;
-    border: 1px solid #ccc;
-    color: #666;
-    height: 51px; */
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid transparent
 }
 
-
-
-#search_header{
-    text-align: center;
-    position: relative;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 20px;
 }
 
-/* .search-bar button{
-    font-size: 40px;
-    display: inline-block;
-    background-color: rgb(177, 140, 140);
-    cursor: pointer;
-    width: 55px;
-    height: 55px;
-    text-align: center;
-} */
-
-/* .search-bar form{
-    font-size: 1em;
-    padding: 0.5em;
-    border-radius: 1em;
-    font-family: sans-serif;
-} */
-
-.moviecard{
-    position: relative;
-    text-align: center;
-    display: block;
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 
-.poster{
-    display: inline;
-    vertical-align: middle;
-    
-}
-.moviename{
-    display: inline;
-    vertical-align: middle;
+.card img {
+  border-radius: 5px 5px 0 0;
 }
 
-#details, #search_header{
-    color: white;
+.card .container {
+  padding: 2px 16px;
 }
 
+.movie-content{
+  background-color: rgb(220, 244, 248);
+}
+
+.search-heading h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 40px;
+  margin: 40px;
+}
+
+#about-heading {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 40px;
+  margin: 40px;
+}
+
+#about-paragraph {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 40px;
+  margin: 40px;
+}

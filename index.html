@@ -11,10 +11,6 @@
 <body>
     <div class="container">
         <header class="moviefinder-header">
-            <!-- <div class="div-logo">
-                <img src="images/">
-                <span class="logo-text">Movie Finder</span>
-            </div> -->
             <nav class="moviefinder-nav">
                 <a href="index.html" class="active">MovieFinder</a>
                 <a href="about.html">About</a>
@@ -22,12 +18,14 @@
         </header>
     </div>
     <div class="content">
-        <img src="images/logo_clapperboard.png" class="logo"><span class="logo-text"><span id="abc" onclick="change_title()">Movie Finder</span></span>
+        <img src="images/logo_clapperboard.png" class="logo">
+        <span class="logo-text">
+          <span id="abc" onclick="change_title()">Movie Finder</span>
+        </span>
         <div class="search-bar">
             <input type="text" placeholder="Search for Movie" id="movietitle">
             <input value="&#x1F50E;" type="submit" onclick="setItemInSession()">
         </div>
     </div>
-    
 </body>
 </html>
